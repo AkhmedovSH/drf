@@ -18,9 +18,6 @@ from django.shortcuts import get_object_or_404
 
 # Create your views here.
 
-class ArticleViewSet(viewsets.ViewSet):
-	
-
 class GenericApiView(generics.GenericAPIView, mixins.ListModelMixin, mixins.CreateModelMixin,
  mixins.UpdateModelMixin, mixins.RetrieveModelMixin, mixins.DestroyModelMixin):
 	serializer_class = ArticleSerializer
